@@ -1,0 +1,127 @@
+<html>
+
+<head>
+	<style>
+		#main-page {
+			margin: 2em 3em;
+			padding: 1em;
+			display: block;
+		}
+
+		#top-table {
+			display: block;
+			padding: 0;
+			margin: 12px;
+			width: 100%;
+		}
+
+		.top-tab-item {
+			margin: 4px;
+			min-width: 8em;
+			height: 4em;
+			background-color: white;
+			display: inline-block;
+			border: solid 2px gray;
+		}
+
+		.top-tab-text {
+			display: flex;
+			height: 100%;
+			align-items: center;
+			margin: 0.5em, 0.5em;
+			margin-left: .8em;
+			margin-right: .8em;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.top-tab-text-english {
+			font-size: 10px;
+			font-weight: normal;
+		}
+
+		.top-tab-viewing-page {
+			background-color: lightgray;
+			border-color: black;
+			color: darkgreen;
+		}
+	</style>
+</head>
+
+<body>
+	<style>
+		body {
+			background: url('https://static.wikia.nocookie.net/backrooms/images/c/c0/Rainbowgradient.gif/revision/latest?cb=20230218031908&path-prefix=zh');
+			background-size: cover;
+		}
+
+		#main-page {
+			background: #0001;
+		}
+
+		.说的道理符号 {
+			max-width: 1.2em;
+			max-height: 1.2em;
+		}
+
+		.top-tab-viewing-page {
+			background-color: greenyellow;
+			border-color: black;
+			color: darkgreen;
+		}
+		.top-tab-viewing-page::before {
+			content: url('https://pltision.github.io/blog/resources/index/浏览箭头.svg');
+			position: absolute;
+			top: 120px;
+			left:-25px;
+			transform: rotate(15deg);
+			animation: forwards infinite 0.3s 浏览箭头动画 alternate;
+		}
+		@keyframes 浏览箭头动画 {
+			from{
+				top: 125px;
+			}
+			to{
+				top: 100px;
+			}
+		}
+		
+	</style>
+
+	<BLOCK id="top-table">
+		<BLOCK id="top-index-tab" class="top-tab-item top-tab-viewing-page">
+			<div class="top-tab-text">
+				<div>首页<div class="top-tab-text-english">INDEX</div>
+				</div>
+			</div>
+		</BLOCK>
+		<BLOCK id="top-project-tab" class="top-tab-item">
+			<div class="top-tab-text">
+				<div>项目<div class="top-tab-text-english">PROJECTS</div>
+				</div>
+			</div>
+		</BLOCK>
+		<BLOCK id="top-docs-tab" class="top-tab-item">
+			<div class="top-tab-text">
+				<div>文本<div class="top-tab-text-english">DOCS</div>
+				</div>
+			</div>
+		</BLOCK>
+		<BLOCK id="top-arts-tab" class="top-tab-item">
+			<div class="top-tab-text">
+				<div>画作<div class="top-tab-text-english">ARTS</div>
+				</div>
+			</div>
+		</BLOCK>
+	</BLOCK>
+	<BLOCK id="main-page">
+		<h1><img src="https://static.wikia.nocookie.net/backrooms/images/c/c9/%E8%AF%B4%E7%9A%84%E9%81%93%E7%90%86.gif/revision/latest/thumbnail-down/width/200/height/200?cb=20221002015418&amp;path-prefix=zh"
+				class="说的道理符号">大家好啊, 我是pertaz<img
+				src="https://static.wikia.nocookie.net/backrooms/images/c/c9/%E8%AF%B4%E7%9A%84%E9%81%93%E7%90%86.gif/revision/latest/thumbnail-down/width/200/height/200?cb=20221002015418&amp;path-prefix=zh"
+				class="说的道理符号"></h1>
+	</BLOCK>
+</body>
+
+
+</html>
+
