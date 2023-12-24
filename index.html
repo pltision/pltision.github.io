@@ -15,7 +15,7 @@
 			width: 100%;
 		}
 
-		.top-tab-item {
+		/* .top-tab-item {
 			margin: 4px;
 			min-width: 8em;
 			height: 4em;
@@ -23,6 +23,26 @@
 			display: inline-block;
 			border: solid 2px gray;
 		}
+		.top-tab-viewing-page {
+			background-color: lightgray;
+			border-color: black;
+			color: darkgreen;
+		} */
+
+		.top-tab-item {
+			background-color: khaki;
+			border: solid 2px brown;
+			display: inline-block;
+			margin: 4px;
+			min-width: 8em;
+			height: 4em;
+		}
+		.top-tab-viewing-page {
+			background-color: greenyellow;
+			border-color: black;
+			color: darkgreen;
+		}
+
 
 		.top-tab-text {
 			display: flex;
@@ -38,12 +58,6 @@
 		.top-tab-text-english {
 			font-size: 10px;
 			font-weight: normal;
-		}
-
-		.top-tab-viewing-page {
-			background-color: lightgray;
-			border-color: black;
-			color: darkgreen;
 		}
 	</style>
 </head>
@@ -66,56 +80,79 @@
 			max-height: 1.2em;
 		}
 
-		.top-tab-item {
-			background-color: khaki;
-			border: solid 2px brown;
-		}
-		.top-tab-viewing-page {
-			background-color: greenyellow;
-			border-color: black;
-			color: darkgreen;
-		}
 		.top-tab-viewing-page::before {
 			content: url('https://pltision.github.io/resources/blog/index/浏览箭头.svg');
 			position: absolute;
-			top: 120px;
-			left:140px;
+			top: 25px;
+			left:100px;
 			height: 0;
 			width: 0;
-			transform: rotate(15deg);
+			transform: skew(-10deg,30deg);
 			animation: forwards infinite 0.25s 浏览箭头动画 alternate;
 		}
 		@keyframes 浏览箭头动画 {
 			from{
-				top: 50px;
-			}
-			to{
 				top: 25px;
 			}
+			to{
+				top: 0px;
+			}
 		}
+		#top-index-botton{
+			transform: skew(10deg,-15deg);
+		}
+		
+		.wavy-text{
+			/* animation: jiggle;
+			animation-duration: 500ms;
+			animation-iteration-count: infinite; */
+			animation: infinite 500ms jiggle;
+			display: inline-flex;
+		}
+		.wavy-text span{
+			display: inline-flex;
+		}
+
+		/* .wavy-text span:nth-child(1) { animation-delay: 100ms }
+		.wavy-text span:nth-child(2) { animation-delay: 200ms }
+		.wavy-text span:nth-child(3) { animation-delay: 300ms }
+		.wavy-text span:nth-child(4) { animation-delay: 400ms }
+		.wavy-text span:nth-child(5) { animation-delay: 500ms } */
+
+		@keyframes jiggle {
+			0% {
+				transform: translateY(-4px);
+			}
+			50% {
+				transform: translateY(6px);
+			}
+			100% {
+				transform: translateY(-4px);
+			}
+	}
 		
 	</style>
 
 	<BLOCK id="top-table">
-		<BLOCK id="top-index-tab" class="top-tab-item top-tab-viewing-page">
+		<BLOCK id="top-index-botton" class="top-tab-item top-tab-viewing-page">
 			<div class="top-tab-text">
 				<div>首页<div class="top-tab-text-english">INDEX</div>
 				</div>
 			</div>
 		</BLOCK>
-		<BLOCK id="top-project-tab" class="top-tab-item">
+		<BLOCK id="top-project-botton" class="top-tab-item">
 			<div class="top-tab-text">
 				<div>项目<div class="top-tab-text-english">PROJECTS</div>
 				</div>
 			</div>
 		</BLOCK>
-		<BLOCK id="top-docs-tab" class="top-tab-item">
+		<BLOCK id="top-docs-botton" class="top-tab-item">
 			<div class="top-tab-text">
 				<div>文本<div class="top-tab-text-english">DOCS</div>
 				</div>
 			</div>
 		</BLOCK>
-		<BLOCK id="top-arts-tab" class="top-tab-item">
+		<BLOCK id="top-arts-botton" class="top-tab-item">
 			<div class="top-tab-text">
 				<div>画作<div class="top-tab-text-english">ARTS</div>
 				</div>
@@ -123,10 +160,11 @@
 		</BLOCK>
 	</BLOCK>
 	<BLOCK id="main-page">
-		<h1><img src="https://pltision.github.io/resources/说的道理.gif"
-				class="说的道理符号">大家好啊, 我是pertaz<img
+		<h1 style="text-shadow: #0004 1px 2px 5px; "><img src="https://pltision.github.io/resources/说的道理.gif"
+				class="说的道理符号"><span style="color: yellow;">大家 <span style="color: red;transform: scale(1.7,1.2) skew(-5deg,-10deg);display: inline-block;width: 1.25em;">好</span>啊, 我是<span class="wavy-text" style="color: greenyellow;"><span>p</span><span>e</span><span>r</span><span>t</span><span>a</span><span>z</span></span><img
 				src="https://pltision.github.io/resources/说的道理.gif"
 				class="说的道理符号"></h1>
+		<p>这是一个搭建在Github上的纯HTML网站, 为了使首页更加引入注目, 我用了超多的CSS填充它😋</p>
 	</BLOCK>
 </body>
 
