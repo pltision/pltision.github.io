@@ -13,7 +13,7 @@
 			padding: 0;
 			margin: 12px;
 			width: 100%;
-			animation: infinite alternate ease-in-out 5.3215s 摇摆动画;
+			animation: infinite alternate ease-in-out 2s 摇摆动画;
 
 		}
 
@@ -360,13 +360,13 @@
 
 		@keyframes 摇摆动画 {
 			0% {
-				transform: rotate(-1deg) translateX(0.1em) translateY(-0.5em);
+				transform: rotate(-1deg) translateY(-0.5em);
 			}
-			50% {
-				transform: rotate(0deg) translateX(0.12em) translateY(-0em);
-			}
+			/* 50% {
+				transform: rotate(0deg) translateX(0.06em) translateY(0em);
+			} */
 			100% {
-				transform: rotate(1deg) translateX(-0.2em) translateY(0.5em);
+				transform: rotate(1deg) translateY(0.5em);
 			}
 		}
 		
