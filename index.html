@@ -1,5 +1,5 @@
-
 <html lang="zh-CN">
+
 <head>
 	<style>
 		#main-page {
@@ -36,8 +36,9 @@
 			margin: 4px;
 			min-width: 8em;
 			height: 4em;
-			
+
 		}
+
 		.top-tab-viewing-page {
 			background-color: greenyellow;
 			border-color: black;
@@ -66,8 +67,8 @@
 <body>
 	<style>
 		body {
-			background: url('https://pltision.github.io/resources/blog/index/彩虹背景.gif');
-			/* background: url('D:/360安全浏览器下载/彩虹背景.gif'); */
+			/* background: url('https://pltision.github.io/resources/blog/index/彩虹背景.gif'); */
+			background: url('D:/360安全浏览器下载/彩虹背景.gif');
 			background-size: cover;
 			background-attachment: fixed;
 		}
@@ -85,76 +86,110 @@
 			content: url('https://pltision.github.io/resources/blog/index/浏览箭头.svg');
 			position: absolute;
 			top: 25px;
-			left:100px;
-			transform: skew(-10deg,30deg) scale(3.25);
+			left: 100px;
+			transform: skew(-10deg, 30deg) scale(3.25);
 			animation: forwards infinite 0.25s 浏览箭头动画 alternate;
 			height: 0;
 			width: 0;
 		}
+
 		@keyframes 浏览箭头动画 {
-			from{
+			from {
 				top: 25px;
 			}
-			to{
+
+			to {
 				top: 0px;
 			}
 		}
-		#top-index-botton{
-			transform: skew(10deg,-15deg);
+
+		#top-index-botton {
+			transform: skew(10deg, -15deg);
 		}
-		
-		.wavy-text span{
+
+		.wavy-text span {
 			animation: infinite 500ms 字母跳跃动画;
 			display: inline-flex;
 		}
-		.wavy-text span:nth-child(1) { animation-delay: 100ms }
-		.wavy-text span:nth-child(2) { animation-delay: 200ms }
-		.wavy-text span:nth-child(3) { animation-delay: 300ms }
-		.wavy-text span:nth-child(4) { animation-delay: 400ms }
+
+		.wavy-text span:nth-child(1) {
+			animation-delay: 100ms
+		}
+
+		.wavy-text span:nth-child(2) {
+			animation-delay: 200ms
+		}
+
+		.wavy-text span:nth-child(3) {
+			animation-delay: 300ms
+		}
+
+		.wavy-text span:nth-child(4) {
+			animation-delay: 400ms
+		}
+
 		/* .wavy-text span:nth-child(5) { animation-delay: 500ms } */
-		.wavy-text span:nth-child(5n+1) { animation-delay: 100ms }
-		.wavy-text span:nth-child(5n+2) { animation-delay: 200ms }
-		.wavy-text span:nth-child(5n+3) { animation-delay: 300ms }
-		.wavy-text span:nth-child(5n+4) { animation-delay: 400ms }
+		.wavy-text span:nth-child(5n+1) {
+			animation-delay: 100ms
+		}
+
+		.wavy-text span:nth-child(5n+2) {
+			animation-delay: 200ms
+		}
+
+		.wavy-text span:nth-child(5n+3) {
+			animation-delay: 300ms
+		}
+
+		.wavy-text span:nth-child(5n+4) {
+			animation-delay: 400ms
+		}
+
 		/* .wavy-text span:nth-child(5n) { animation-delay: 500ms } */
 
 		@keyframes 字母跳跃动画 {
 			0% {
 				transform: translateY(0em);
 			}
+
 			25% {
 				transform: translateY(0.1em);
 			}
+
 			75% {
 				transform: translateY(-0.1em);
 			}
+
 			100% {
 				transform: translateY(0em);
 			}
 		}
 
-		.纯字{
-			background:-webkit-linear-gradient(315deg,lightblue 30%,white 45%, lightblue 60%);
-			-webkit-background-clip:text;
+		.纯字 {
+			background: -webkit-linear-gradient(315deg, lightblue 30%, white 45%, lightblue 60%);
+			-webkit-background-clip: text;
 			background-clip: text;
-			-webkit-text-fill-color:transparent;
+			-webkit-text-fill-color: transparent;
 			animation: infinite 3s 纯字闪耀;
 		}
-		.HTML装饰{
-			color:red;
+
+		.HTML装饰 {
+			color: red;
 			text-shadow: darkred 1px 1px 1px;
 			display: inline-block;
 			margin-left: 0.4em;
 			margin-right: 0.4em;
-			transform: scale(1.2,2) translateY(-0.1em);
+			transform: scale(1.2, 2) translateY(-0.1em);
 			font-weight: 1000;
 		}
-		.HTML装饰::before{
+
+		.HTML装饰::before {
 			text-shadow: aqua 1px 1px 1px;
 			content: "<";
 			color: blue;
 		}
-		.HTML装饰::after{
+
+		.HTML装饰::after {
 			text-shadow: aqua 1px 1px 1px;
 			content: ">";
 			color: blue;
@@ -162,114 +197,195 @@
 
 
 		@keyframes 纯字闪耀 {
-			40%{
+			40% {
 				background-position: 0 -1em;
 			}
-			70%{
+
+			70% {
 				background-position: 0 1em;
 			}
-			
-		}
-		.title{
-			margin-left: 5%;
-			text-shadow: #0004 1px 2px 5px;
-			max-width: 50em;
-			transform: scale(1.2,1)rotate(-2deg);
-			background: #ccdd00;
-			border: 4mm ridge #00cc00;
-			animation:0.5s 标题恢复动画;
 
 		}
-		.title:hover{
-			transform: scale(1.2,1) rotate(0deg);
-			animation:0.5s 标题悬停动画;
+
+		.title {
+			margin-left: 5%;
+			margin-right: 5%;
+			text-shadow: #0004 1px 2px 5px;
+			max-width: 50em;
+			transform: scale(1.2, 1)rotate(-2deg);
+			background: #ddee00;
+			border: 4mm ridge #00cc00;
+			animation: 0.5s 标题恢复动画;
+
 		}
-		@keyframes 标题悬停动画{
-			
-			0%{
-				transform: scale(1.2,1) rotate(-2deg);
+
+		.title:hover {
+			transform: scale(1.2, 1) rotate(0deg);
+			animation: 0.5s 标题悬停动画;
+		}
+
+		@keyframes 标题悬停动画 {
+
+			0% {
+				transform: scale(1.2, 1) rotate(-2deg);
 			}
 		}
+
 		@keyframes 标题恢复动画 {
-			0%{
-				transform: scale(1.2,1) rotate(0deg);
+			0% {
+				transform: scale(1.2, 1) rotate(0deg);
 			}
 		}
-		.p1_style{
+
+		.p1_style {
 			border: solid greenyellow 6px;
 			background: green;
 			border-radius: 30px;
 			padding: 1em;
-			
+
 			color: greenyellow;
 			max-width: 1600px;
-			
+
 			padding-top: 4em;
 			margin-top: -4em;
 		}
-		.p1_style:hover{
+
+		.p1_style:hover {
 			animation: 0.5s p1动画;
-			transform: scale(1,1);
+			transform: scale(1, 1);
 			padding-top: 2em;
 			margin-top: -2em;
 		}
-		@keyframes p1动画{
-			0%{
+
+		@keyframes p1动画 {
+			0% {
 				padding-top: 4em;
 				margin-top: -4em;
 			}
-			50%{
-				transform: scale(1.1,1.1);
+
+			50% {
+				transform: scale(1.1, 1.1);
 			}
 		}
-		.p1_style a{
-			color:yellow;
+
+		.p1_style a {
+			color: yellow;
 		}
-		.超级多{
+
+		.超级多 {
 			font-size: 1.5em;
 			font-weight: bold;
 			color: white;
 			text-shadow: #f8f 0px 0px 7px;
 			animation: infinite linear 0.2s 超级多动画;
 		}
-		@keyframes 超级多动画{
-			0%{
+
+		@keyframes 超级多动画 {
+			0% {
 				text-shadow: #f8f 0px 0px 7px;
 			}
-			33%{
+
+			33% {
 				text-shadow: #ff8 0px 0px 7px;
 			}
-			66%{
+
+			66% {
 				text-shadow: #8ff 0px 0px 7px;
 			}
 		}
-		.CSS装饰{
+
+		.CSS装饰 {
 			font-weight: bold;
-			background:-webkit-linear-gradient(0deg,#f00 0%,#0f0 33%, #00f 67%, #f00 100%);
-			-webkit-background-clip:text;
+			background: -webkit-linear-gradient(0deg, #f00 0%, #0f0 33%, #00f 67%, #f00 100%);
+			-webkit-background-clip: text;
 			background-clip: text;
-			-webkit-text-fill-color:transparent;
+			-webkit-text-fill-color: transparent;
 			animation: infinite 10s alternate linear CSS装饰动画;
 			display: inline-block;
 			font-size: 1.1em;
 			margin: 0.1em;
-			transform: scale(1,1.4);
+			transform: scale(1, 1.4);
 		}
-		@keyframes CSS装饰动画{
-			0%{
-				background-position: 5em 0 ;
+
+		@keyframes CSS装饰动画 {
+			0% {
+				background-position: 5em 0;
 			}
-			100%{
-				background-position: -5em 0 ;
+
+			100% {
+				background-position: -5em 0;
 			}
-			
+
 		}
-		@keyframes 转圈动画{
-			0%{
+
+		@keyframes 转圈动画 {
+			0% {
 				transform: rotate(0turn);
 			}
-			100%{
+
+			100% {
 				transform: rotate(1turn);
+			}
+		}
+
+		.p3_style {
+			border: solid brown 4px;
+			margin: 1em;
+			padding: 1em;
+			background-color: khaki;
+			transform: rotate(-2deg);
+			animation: infinite alternate ease-in-out 2s p3动画;
+		}
+		.p3_style:hover{
+			animation-play-state: paused;
+		}
+		
+		@keyframes p3动画{
+			0%{
+				transform: rotate(-1deg);
+			}
+			100%{
+				transform: rotate(1deg);
+			}
+		}
+
+		.p3_head {
+			color: gold;
+			text-align: center;
+			background: rgb(32, 153, 32);
+			border: solid 6px greenyellow;
+			width: 240px;
+			padding: .5em;
+			margin-top:-2em;
+			margin-left:-2em;
+			transform: rotate(-10deg);
+			/* shape-outside: polygon(200px 0, 100% 0, 100% 100%, 0 100%, 0 40px); */
+		}
+		.p3_head_text{
+			display: inline-block;
+			transform: scale(2,1);
+		}
+		.p3_head_display{
+			display: inline;
+			shape-outside: polygon(0 0,220px 0, 0 40px);
+			float: left;
+		}
+		.p3_text{
+			/* shape-outside: polygon(200px 0, 100% 0, 100% 100%, 0 100%, 0 40px); */
+			border: red solid;
+			/* margin-top: -2em; */
+		}
+		/* .p3_outside{} */
+		.p3_outside:hover{
+			animation: 0.5s p3悬停;
+			display: block;
+		}
+		@keyframes p3悬停{
+			0%{
+				transform: scale(0.95,0.95);
+			}
+			50%{
+				transform: scale(1.05,1.05);
 			}
 		}
 	</style>
@@ -301,22 +417,36 @@
 		</BLOCK>
 	</BLOCK>
 	<BLOCK id="main-page">
-		<h1 class="title"><img src="https://pltision.github.io/resources/说的道理.gif"
-				class="说的道理符号"><span style="color: yellow;">大家 <span style="color: red;transform: scale(1.7,1.2) skew(-5deg,-10deg);display: inline-block;width: 1.25em;">好</span>啊, 我是<span class="wavy-text" style="color: greenyellow;"><span>p</span><span>e</span><span>r</span><span>t</span><span>a</span><span>z</span></span><img
-				src="https://pltision.github.io/resources/说的道理.gif"
-				class="说的道理符号"></h1>
+		<h1 class="title"><img src="https://pltision.github.io/resources/说的道理.gif" class="说的道理符号"><span
+				style="color: yellow;">大家 <span
+					style="color: red;transform: scale(1.7,1.2) skew(-5deg,-10deg);display: inline-block;width: 1.25em;">好</span>啊,
+				我是<span class="wavy-text"
+					style="color: greenyellow;"><span>p</span><span>e</span><span>r</span><span>t</span><span>a</span><span>z</span></span><img
+					src="https://pltision.github.io/resources/说的道理.gif" class="说的道理符号"></h1>
 		<div class="p1_style">
-			<p>这是一个搭建在<a href="https://github.com" target="_blank"><svg style="width: 1em;height:1em;" height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
-				<path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
-			</svg>GitHub</a>上的<span style="font-weight:bold;font-size:1.3em;" class="纯字">纯</span><span class="HTML装饰">HTML</span>网站, 为了使首页更加引入注目, 我用了<span class="超级多">超多的</span><span class="CSS装饰">CSS</span>填充它<span style="display: inline-block;animation: infinite linear 10s 转圈动画;">😋</span></p>
+			<p>这是一个搭建在<a href="https://github.com" target="_blank"><svg style="width: 1em;height:1em;" height="32"
+						aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true"
+						class="octicon octicon-mark-github v-align-middle color-fg-default">
+						<path
+							d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+						</path>
+					</svg>GitHub</a>上的<span style="font-weight:bold;font-size:1.3em;" class="纯字">纯</span><span
+					class="HTML装饰">HTML</span>网站, 为了使首页更加引入注目, 我用了<span class="超级多">超多的</span><span
+					class="CSS装饰">CSS</span>填充它<span
+					style="display: inline-block;animation: infinite linear 10s 转圈动画;">😋</span></p>
+			<p>以后可能会把这个站点打造成一个无后端的博客，或者继续随便瞎写。具体要整啥活...<span
+					class="wavy-text"><span>我</span><span>不</span><span>知</span><span>到</span></span>。</p>
 		</div>
-		<div class="p3_style">
-			<h2 style="color:gold ;text-align: center;background: rgb(32, 153, 32); border:solid 6px greenyellow;max-width: 200px;padding: .5em;"><span style="transform: scale(1.5,1);display: inline-block;">我是个啥</span></h2>
-			
+		<div style="height:3em"></div>
+		<div class="p3_outside">
+			<div class="p3_style">
+				<span class="p3_head_display"><h2 class="p3_head"><span class="p3_head_text">我是个啥</span></h2></span>
+				<div style="height:1em"></div>
+				喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵
+			</div>
 		</div>
 	</BLOCK>
 </body>
 
 
 </html>
-
