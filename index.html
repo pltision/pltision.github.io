@@ -67,8 +67,8 @@
 <body>
 	<style>
 		body {
-			/* background: url('https://pltision.github.io/resources/blog/index/彩虹背景.gif'); */
-			background: url('D:/360安全浏览器下载/彩虹背景.gif');
+			background: url('https://pltision.github.io/resources/blog/index/彩虹背景.gif');
+			/* background: url('D:/360安全浏览器下载/彩虹背景.gif'); */
 			background-size: cover;
 			background-attachment: fixed;
 		}
@@ -108,46 +108,38 @@
 		}
 
 		.wavy-text span {
-			animation: infinite 500ms 字母跳跃动画;
+			animation: infinite 500ms 字母波浪动画;
 			display: inline-flex;
 		}
-
 		.wavy-text span:nth-child(1) {
 			animation-delay: 100ms
 		}
-
 		.wavy-text span:nth-child(2) {
 			animation-delay: 200ms
 		}
-
 		.wavy-text span:nth-child(3) {
 			animation-delay: 300ms
 		}
-
 		.wavy-text span:nth-child(4) {
 			animation-delay: 400ms
 		}
-
 		/* .wavy-text span:nth-child(5) { animation-delay: 500ms } */
+
 		.wavy-text span:nth-child(5n+1) {
 			animation-delay: 100ms
 		}
-
 		.wavy-text span:nth-child(5n+2) {
 			animation-delay: 200ms
 		}
-
 		.wavy-text span:nth-child(5n+3) {
 			animation-delay: 300ms
 		}
-
 		.wavy-text span:nth-child(5n+4) {
 			animation-delay: 400ms
 		}
-
 		/* .wavy-text span:nth-child(5n) { animation-delay: 500ms } */
 
-		@keyframes 字母跳跃动画 {
+		@keyframes 字母波浪动画 {
 			0% {
 				transform: translateY(0em);
 			}
@@ -162,6 +154,16 @@
 
 			100% {
 				transform: translateY(0em);
+			}
+		}
+
+		.jumping_text{
+			animation: infinite alternate 0.2s 字母跳跃动画;
+			display: inline-flex;
+		}
+		@keyframes 字母跳跃动画{
+			100%{
+				transform: translateY(-0.3em);
 			}
 		}
 
@@ -434,7 +436,7 @@
 					class="HTML装饰">HTML</span>网站, 为了使首页更加引入注目, 我用了<span class="超级多">超多的</span><span
 					class="CSS装饰">CSS</span>填充它<span
 					style="display: inline-block;animation: infinite linear 10s 转圈动画;">😋</span></p>
-			<p>以后可能会把这个站点打造成一个无后端的博客，或者继续随便瞎写。具体要整啥活...<span
+			<p>以后可能会把这个站点打造成一个无后端的博客，或者继续随便瞎写。具体要整啥<span class="jumping_text">活</span>...<span
 					class="wavy-text"><span>我</span><span>不</span><span>知</span><span>到</span></span>。</p>
 		</div>
 		<div style="height:3em"></div>
