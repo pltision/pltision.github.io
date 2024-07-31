@@ -255,7 +255,7 @@
 			}
 		}
 	</style>
-	<style p0样式>
+	<style p0样式> 
 		.纯字 {
 			background: -webkit-linear-gradient(315deg, lightblue 30%, white 45%, lightblue 60%);
 			-webkit-background-clip: text;
@@ -388,27 +388,33 @@
 				text-shadow: #8ff 0px 0px 7px;
 			}
 		}
-
+		
 		.CSS装饰 {
 			font-weight: bold;
-			background: -webkit-linear-gradient(0deg, #f00 0%, #0f0 33%, #00f 67%, #f00 100%);
+			background: -webkit-linear-gradient(0deg, #ff0 0%, #0ff 33%, #f0f 67%, #ff0 100%);
 			-webkit-background-clip: text;
 			background-clip: text;
 			-webkit-text-fill-color: transparent;
-			animation: infinite 10s alternate linear CSS装饰动画;
+			animation: infinite 20s alternate linear CSS装饰动画;
 			display: inline-block;
 			font-size: 1.1em;
 			margin: 0.1em;
 			transform: scale(1, 1.4);
+			font-style: italic;
+		}
+		.CSS装饰::after{
+			content: "";
+			width: 0.2em;
+			display: inline-block;
 		}
 
 		@keyframes CSS装饰动画 {
 			0% {
-				background-position: 5em 0;
+				background-position: 10em 0;
 			}
 
 			100% {
-				background-position: -5em 0;
+				background-position: -10em 0;
 			}
 
 		}
@@ -438,7 +444,6 @@
 		}
 		.p1_outside1{
 			animation: 1s p1复位;
-			
 		}
 		.p1_outside1:hover{
 			animation: 1s p1悬停;
@@ -465,6 +470,63 @@
 				margin: 0 2% 0 2%;
 				transform: scale(1.07);
 			}
+		}
+		.p1_text{
+			margin:0 1.5em;
+			display: inline-block;
+		}
+		.JS装饰{
+			display: inline-block;
+			font-size: 1.4em;
+			font-weight: bold;
+			transform: rotate(10deg) scaleY(70%)translateY(0.2em);
+			text-decoration: line-through;
+		}
+		.CSS装饰1 {
+			font-weight: bold;
+			background: -webkit-linear-gradient(0deg, #f00 0%, #0f0 33%, #00f 67%, #f00 100%);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation: infinite 20s alternate linear CSS装饰动画;
+			display: inline-block;
+			font-size: 1.1em;
+			margin: 0.1em;
+			transform: scale(1, 1.4);
+			font-style: italic;
+		}
+		.CSS装饰1::after{
+			content: "";
+			width: 0.2em;
+			display: inline-block;
+		}
+
+		@keyframes CSS装饰1动画 {
+			0% {
+				background-position: 10em 0;
+			}
+
+			100% {
+				background-position: -10em 0;
+			}
+
+		}
+		.重量装饰{
+			display: inline-block;
+    		font-weight: bolder;
+    		transform: scaleX(160%);
+    		margin: 0 10;
+		}
+
+		.Java装饰{
+			color:#d45500;
+			font-weight: bold;
+		}
+		.Java装饰::before{
+			content: url('https://pltision.github.io/resources/blog/index/Java冒烟装饰.svg');
+			position: absolute;
+			margin-top: -0.6em;
+			transform: scale(0.8);
 		}
 	</style>
 	<style p2样式>
@@ -570,7 +632,7 @@
 						style="color: greenyellow;"><span>p</span><span>e</span><span>r</span><span>t</span><span>a</span><span>z</span></span><img
 						src="https://pltision.github.io/resources/说的道理.gif" class="说的道理符号"></h1>
 			<div class="p0_style">
-				<p>这是一个搭建在<a href="https://github.com" target="_blank"><svg style="width: 1em;height:1em;" height="32"
+				<p>这是一个搭建在<a href="https://github.com/pltision/pltision.github.io" target="_blank"><svg style="width: 1em;height:1em;" height="32"
 							aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true"
 							class="octicon octicon-mark-github v-align-middle color-fg-default">
 							<path
@@ -630,10 +692,19 @@
 									d="M 17,31 C 6,28 6,50 17,47" id="path24" sodipodi:nodetypes="cc" />
 							</g>
 						</svg>
-						15岁, 是web开发者
+						16岁, 是开发者
 					</h2>
-	
-					<br /><br /><br /><br />
+					<div class="p1_text">
+						<h3>履历</h3>
+						<ul>
+							<li><span class="Java装饰">Java</span>熟练工，写过一些模组，它们极大的提高了我的Java水平，但一般的独立项目写的不多。已基本掌握Collection接口，会一些awt和swing。我喜欢纯用标准库写项目或依赖某个<span class="重量装饰">重量</span>框架（目前在使用jME3做游戏），不喜欢自己找库。</li>
+							<li>我学过一些算法嘛，所以代码中一般都会比较注重效率，略有一些偏执，目前已经在项目中用到过了搜索之类的算法了。因为我学算法用的是C++所以也会一些，但没拿它写过什么能称得上项目的东西。</li>
+							<li>混过一段时间的fd后室wiki，在那学会了<span class="HTML装饰">HTML</span>。如果你去那翻过的话你可能会看到一个叫做<span class="CSS装饰1">Level CSS</span>的楼层，我的主页就是想做成它那样的喵，不过我还是得保留一些可读性。</li>
+							<li>脚本语言我除了ZenScript是一点也不会，但py我之前在信息课看文档都能瞎捣鼓了。按下F12并翻阅你会发现这个页面根本没有<span class="JS装饰">js</span>之类的脚本，是纯纯的<span class="CSS装饰1">CSS</span>整出来的喵~</li>
+						</ul>
+						<p>关于我在填的坑可以去项目页面找，不过目前也没什么完成度比较高的。</p>
+						<br/>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -644,7 +715,7 @@
 					<h2 class="p2_head"><span class="p2_head_text">我是个啥</span></h2>
 				</span>
 				<div style="height:1em"></div>
-				上文讲述了我在做的和我会做的东西, 这一段来说说我自己吧。数据库中有一个文档记录了我的信息, 你可以看一看, 我把预览窗口放这了。
+				上文讲述了我在整的东西, 这一段来说说我自己吧。数据库中有一个文档记录了我的信息, 你可以看一看, 我把预览窗口放这了。
 				<div style="height:40em;padding: 1em;">
 					<iframe src="https://pltision.github.io/docs/自设.html"
 						style="display: block;width: 100%;height: 100%;"></iframe>
