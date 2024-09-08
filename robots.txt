@@ -1,3 +1,4 @@
 User-agent: *
+Disallow: /$
 Disallow: /index.html
 Disallow: /docs/自设.html
